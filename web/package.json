@@ -9,8 +9,8 @@
   },
   "dependencies": {
     "express": "*",
-    "google-auth-library": "^0.11.0",
-    "googleapis": "^21.3.0",
+    "google-auth-library": "*",
+    "googleapis": "*",
     "mysql": "*",
     "socket.io": "*"
   },
@@ -26,6 +26,8 @@
     "mysql",
     "express",
     "socket.io",
+    "googleapis",
+    "google auth lib",
     "POS System"
   ],
   "author": "Tom Kelly 'Headphones'",
