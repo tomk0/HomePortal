@@ -1,0 +1,45 @@
+{
+  "name": "Home_Portal",
+
+  "version": "0.0.1",
+
+  "description": "web Based portal intened to be displayed on a raspberry pi",
+
+  "main": "server.js",
+
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+
+  "dependencies": {
+    "socket.io": "*",
+    "express": "*",
+    "mysql":"*"
+  },
+
+  "engines": {
+    "node": "4.0.0"
+  },
+
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tomk0/HomePortal"
+  },
+
+  "keywords": [
+    "node",
+    "mysql",
+    "express",
+    "socket.io",
+    "POS System"
+  ],
+
+  "author": "Tom Kelly 'Headphones'",
+
+  "contributors": [
+    "None - ;-;"
+  ],
+  
+  "license": "ISC"
+}
