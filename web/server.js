@@ -91,26 +91,3 @@ function getTables(socketID){
     });
 
 }
-
-function dbComplete(ordID, Type){
-
-  if(Type == 'Food'){
-    Type = 'KITCHEN';
-  }else if (Type == 'Drinks'){
-    Type = 'FOH';
-  }
-
-  var sql = 'UPDATE ORDERS SET ORD_'+Type+'_COMP = TRUE WHERE ORD_ID = \''+ordID+'\';';
-
-  db.query(sql)
-  .on('result', function(data){
-
-    console.log(data);
-
-  }).on('end', function(){
-
-    console.log('Updated '+ordID+' '+Type);
-
-  })
-
-}
