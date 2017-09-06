@@ -50,7 +50,7 @@ server.listen(8080);
 //wating for connection
 io.on('connect', function (socket) {
   // logging the connection and printing the ID
-  console.log("Client Connected %s", socket.id);
+  console.log("Client Connected: %s", socket.id);
   socket.emit('id', socket.id);
 
   // disconnection function
