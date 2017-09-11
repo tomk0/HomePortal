@@ -11,6 +11,8 @@
         <script src="/static/Mat/materialize/js/materialize.js"></script>
         <script type="text/javascript" src="/static/js/socket.js"></script>
         <script type="text/javascript" src="/static/js/met.js"></script>
+        <script type="text/javascript" src="/static/js/GCalender/gcal.js"></script>
+  
 
         <link rel="stylesheet" href="/static/css/main.css">
     </head>
@@ -32,6 +34,12 @@
 
         <div class="container">
             
+            <button id="authorize-button" style="display: none;">Authorize</button>
+            <button id="signout-button" style="display: none;">Sign Out</button>
+        
+            <pre id="content"></pre>
+        
+
         </div>
 
     </body>
@@ -41,5 +49,10 @@
 
 
     </footer>
+
+    <script async defer src="https://apis.google.com/js/api.js"
+    onload="this.onload=function(){};handleClientLoad()"
+    onreadystatechange="if (this.readyState === 'complete') this.onload()">
+  </script>
 
 </html>
