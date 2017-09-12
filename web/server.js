@@ -11,7 +11,7 @@ var db = mysql.createConnection({
 
   host: '127.0.0.1',
   user: 'root',
-  password: 'Salzgitter_1',
+  password: '',
   database: ''
 
 });
